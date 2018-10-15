@@ -1,0 +1,37 @@
+body{
+    background-image: url(../images/bg_body.jpg);
+    font-family: verdana;
+    font-size: 11px;
+    line-height: normal;
+}
+a{
+  text-decoration: underline;
+  color: white;
+}
+a:hover{
+    text-decoration: none;
+}
+h1{
+    line-height: normal;
+    font-family: georgia;
+    font-size: 22px;
+}
+h2{
+    line-height: normal;
+    font-family: georgia;
+    font-size: 18px;
+}
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+.header{
+    position: relative;
+    height: 160px;
+    margin-top: 45px;
+}
+.header .meinmenu{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
