@@ -1,37 +1,233 @@
-body{
+body {
     background-image: url(../images/bg_body.jpg);
     font-family: verdana;
-    font-size: 11px;
+    font-size: 11pt;
     line-height: normal;
-}
-a{
+} 
+
+/* ----------------------------------------------- */
+
+a {
   text-decoration: underline;
   color: white;
-}
+} 
 a:hover{
     text-decoration: none;
 }
-h1{
+h1 {
     line-height: normal;
     font-family: georgia;
-    font-size: 22px;
+    font-size: 22pt;
 }
-h2{
+h2 {
     line-height: normal;
     font-family: georgia;
-    font-size: 18px;
+    font-size: 18pt;
 }
-.wrapper{
+article{
+    margin-bottom: 40px;
+}
+
+/* --------------------------------------------------- */
+
+.wrapper {
     width: 1000px;
     margin: 0 auto;
 }
-.header{
+.header {
     position: relative;
     height: 160px;
     margin-top: 45px;
+    margin-bottom: 40px;
 }
-.header .meinmenu{
+.header .logo{
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+}
+.header .logo img{
+    display: block;
+    width: 223px;
+    height: auto;
+}
+.header .mainmenu {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 0; 
+}
+.header .menu-list{
+    border-radius: 5px;
+    background: white;
+}
+.header .menu-item {
+    display: inline-block; 
+    vertical-align: middle;  
+}
+.header .menu-item.active{
+    background-image: url(../images/bg_menu-item-active.png);
+}
+.header .menu-item a{
+    color: #461501;
+    display: block;
+    width: 117px;
+    height: 39px;
+    text-align: center;
+    line-height: 39px;
+    text-decoration: none;
+    font-size: 14pt;
+    font-family: georgia;
+}
+.header .lang-list{
+    position: absolute;
+    left: 20px;
+    top: 0;
+
+}
+.header .lang-item{
+    display: inline-block;
+    margin-right: 15px;
+    color: #e8d1a4;
+    position: relative;
+    font-size: 11pt;
+    font-family: verdana;
+}
+.header .lang-item::before{
+    content: '|';
+    position: absolute;
+    top: 0;
+    left: -13px;
+    color: white;
+}
+.header .lang-item:first-child::before{
+    display: none;
+}
+.header .lang-item a{
+    color: white;
+}
+.header .auth{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    color: white;
+}
+.header .auth-link{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    font-size: 11pt;
+    font-family: verdana;
+    position: relative;
+    
+}
+.header .signin{
+    color: #e8d1a4;
+}
+.header .auth-link a{
+    color: inherit;
+}
+.header .auth-link::before{
+    content: '|';
+    position: absolute;
+    top: 0;
+    left: -13px;
+    color: white;
+}
+.header .auth-link:first-child::before{
+    display: none;
+}
+
+/* --------------------header----------------- */
+
+.content{ 
+    position: relative;
+    font-family: georgia;
+    
+}
+.promo{
+    background: url("../images/bg_about.png") no-repeat 55px 60px, url(../images/bg_promo.png);
+    display: block;   
+    padding-left: 130px;
+    color: #f9da5a;
+    font-size: 14pt;
+    font-style: italic;
+    line-height: normal;
+    border-radius: 10px;
+    padding-bottom: 35px;
+    margin-bottom: 50px;
+}
+.promo h1{ 
+    color: #ead4aa;
+    font-size: 22pt;
+    font-family: georgia;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.article{
+    position: relative;
+}
+.article img{
+    display: block;
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+}
+.article h2{
+    position: absolute; 
+    margin-left: 130px;
+    font-size: 18pt;
+    font-family: georgia;
+    color: #fff68d;
+    line-height: normal;
+    margin-bottom: 15px;
+       
+}
+.article p{    
+    margin-left: 130px;
+    font-size: 11pt;
+    font-family: verdana;
+    color: white;
+       
+}
+
+/* -------------------------content---------------- */
+
+.footer{
+    box-sizing: border-box;
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    border-top: 1px solid #9a7b3e;
+    height: 75px;
+    color: #dabc52;
+    padding: 40px 20px 0;
+    font-size: 11pt;
+    font-family: verdana;
+}
+.footer .footermenu{
+    position: absolute;
+    right: 20px;
+    top: 40px;
+}
+
+.footer .menu-item{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 15px;
+    color: white;
+    font-size: 11pt;
+    font-family: verdana;
+}
+.footer .menu-item a{
+    text-decoration: none;
+}
+.footer .menu-item::before{
+    content: '|';
+    position: absolute;
+    top: 0;
+    left: -13px;
+    color: white;
+}
+.footer .menu-item:first-child::before{
+    display: none;
 }
